@@ -4,7 +4,8 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ## Links
 
-- Solution URL: [Github](https://github.com/SeanCravener/frontend-mentor-challenges/tree/main/level-1/four-card-feature-section)
+- Repository URL: [Github](https://github.com/SeanCravener/Frontend-Mentor-Four-Card-Feature-Section)
+- Live site URL: [Github Pages](https://seancravener.github.io/Frontend-Mentor-Four-Card-Feature-Section/)
 
 ## Author
 
