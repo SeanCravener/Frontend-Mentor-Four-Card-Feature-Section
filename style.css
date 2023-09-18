@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  /* Breakpoints */
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+
+  /* Primary Colors */
+  --primary-one: hsl(0, 78%, 62%);
+  --primary-two: hsl(180, 62%, 55%);
+  --primary-three: hsl(34, 97%, 64%);
+  --primary-four: hsl(212, 86%, 64%);
+
+  /* Neutral Colors */
+  --neutral-one: hsl(234, 12%, 34%);
+  --neutral-two: hsl(229, 6%, 66%);
+  --neutral-three: hsl(0, 0%, 98%);
+
+  /* Font Sizes */
+  --body-font: 15px;
+
+  /* Font Weights */
+  --light-weight: 200;
+  --regular-weight: 400;
+  --bold-weight: 600;
+
+  /* Font Family */
+  --font-family: "poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--neutral-three);
+  color: var(--neutral-two);
+  font-family: var(--font-family);
+  font-size: var(--body-font);
+
+  line-height: 1.5;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+section {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.supervisor {
+  border-top: 4px solid turquoise;
+}
+
+& .team-builder {
+  border-top: 4px solid red;
+}
+
+& .karma {
+  border-top: 4px solid orange;
+}
+
+& .calculator {
+  border-top: 4px solid blue;
+}
+
+.supervisor,
+.team-builder,
+.karma,
+.calculator {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--neutral-three);
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: right;
+  width: 375px;
+  height: 250px;
+  margin-bottom: 30px;
+
+  & :first-child {
+    font-size: 1.25rem;
+    font-weight: var(--bold-weight);
+    margin-bottom: 10px;
+    color: black;
+  }
+
+  & p {
+    text-align: left;
+    margin-bottom: 25px;
+    font-size: 0.8rem;
+    color: var(--neutral-two);
+  }
+
+  & img {
+    align-self: end;
+  }
+}
+
+header {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.feature-title {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: var(--light-weight);
+  margin-bottom: 20px;
+  & span {
+    font-weight: var(--bold-weight);
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 1200px;
+  }
+}
